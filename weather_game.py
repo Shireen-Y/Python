@@ -13,23 +13,20 @@
 # anything else respond with 'sorry, i didn't quite catch that'
 
 import time
-weather = {'sunny': 'sun', 'stormy': 'storm/thunder', 'rainy': 'rain', 'rainy and stormy': 'rain and storm/thunder'}
+weather = ['sunny', 'stormy', 'rainy', 'rainy and stormy']
 print('Please choose from the following:')
-time.sleep(1)
+time.sleep(0.5)
 for key in weather:
     print(key)
-    time.sleep(1)
+    time.sleep(0.5)
 weather_response = input('What is the weather like today? ')
-if weather_response == (weather['sunny']):
+if weather_response == (weather[0]):
     print('Do not forget to take your shorts!')
-elif
-
-# if age < 21 and age > 18:
-#     print('You can vote, but unfortunately cannot drink')
-# elif age >= 18:
-#     print('You can vote, please register :)')
-# elif age > 16:
-#     print('You can drive in the US')
-# else:
-#     print('You are a child')
-
+elif weather_response == (weather[1]):
+    print('Take rain coat')
+elif weather_response == (weather[2]):
+    print('Do not forget to take your umbrella')
+elif weather_response == (weather[3]):
+    print('Just stay at home buddy :|')
+else:
+    print('Sorry I did not quite catch that')

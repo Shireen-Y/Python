@@ -1,4 +1,4 @@
-from excercise_calculator import *
+from exercise_calculator import *
 
 def test_full_name1():
     assert full_name('Jefferson', 'Yunn') == 'Jefferson Yunn'
